@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+:root{
+    --white: #FFF;
+    --blue: #035397;
+    --deep-blue: #2C2891;
+    --black: #212121;
+    --fontfam: 'Gemunu Libre', sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontfam);
+}
+
+/* Header */
+
+header{
+    padding: 10px;
+    background-color: var(--white);
+}
+
+.logo-img{
+    position: absolute;
+    top: 5px;
+    left: 127px;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 91px;
+}
+
+nav ul li{
+    margin: 0 25px;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.btn:hover{
+    color: var(--blue);
+    transition: 1s;
+}
+
+.btn-sec{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.btn-sec:hover{
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 0.5s;
+}
+
+/* Main */
+
+main{
+    height: 100px;
+}
+
+/* Footer */
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 44px 91px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.contact div{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.supericon{
+    width: 70px;
+    height: 70px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+h3{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.site-link p{
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+p span{
+    font-weight: bolder;
+}
+
+.copy{
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+.copy p{
+    text-align: center;
+    padding: 20px;
+}
