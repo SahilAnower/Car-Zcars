@@ -20,6 +20,11 @@
 header{
     padding: 10px;
     background-color: var(--white);
+    position: relative;
+    z-index: 10;
+    /* -webkit-box-shadow: 0px 10px 16px -7px rgba(79,79,79,1);
+    -moz-box-shadow: 0px 10px 16px -7px rgba(79,79,79,1); */
+    box-shadow: 0px 15px 27px -10px rgb(148 143 143);
 }
 
 .logo-img{
@@ -74,9 +79,135 @@ nav ul li{
 
 /* Main */
 
-main{
-    height: 100px;
+/* Trip */
+
+.trip{
+    width: 99vw;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("./Images/Banner.png");
+    background-position: center;
+    background-size: cover;
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 57vh;
+    align-items: center;
+    padding: 26px;
+    /* margin: 88px; */
+    margin-right: 144px;
+    background-color: var(--white);
+    margin-top: 45px;
+    box-shadow: 0 0 19px 0px #595260;
+    border-radius: 12px;
+}
+
+h1{
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#input-form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 10px;
+    width: 228px;
+    height: 25px;
+    padding: 5px;
+    border: 0.5px solid var(--blue);
+    border-radius: 5px;
+    /* /* border-color: var(--blue); */
+} 
+
+input:focus{
+    /* border-radius: 1px solid var(--blue); */
+    outline: none;
+    box-shadow: 0 0 10px 2px var(--blue);
+}
+
+#submit_but{
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+#submit_but:hover{
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 0.6s;
+}
+
+/* Drivers */
+
+.drivers{
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./Images/Section-1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 118px;
+    margin-top: 38px;
+}
+
+.contents{
+    margin-top: 43px;
+    display: flex;
+}
+
+.contents div{
+    margin-right: 30px;
+}
+
+.content-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-desc h4{
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+.content-image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0 0 14px 0px #595260;
+}
+
+.content-image img{
+    position: relative;
+    z-index: 200;
+    left: 16px;
+    top: 10px;
+}
+
+/* Owners */
+
+
 
 /* Footer */
 
